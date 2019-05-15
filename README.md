@@ -21,7 +21,7 @@ cluster):
 
 ```console
 $ git clone https://github.com/wallyqs/nats-streaming-cluster-chart nats-streaming-cluster
-$ helm install nats-streaming -n my-release --set natsUrl=nats://nats.nats-io.svc.cluster.local:4222
+$ helm install nats-streaming -n my-release --set natsSvc=nats://nats.nats-io.svc.cluster.local:4222
 ```
 
 This will create 3 follower nodes plus an extra Pod which is
